@@ -47,7 +47,7 @@ class DB_NestedSet_MDB2 extends DB_NestedSet
      * @param mixed $dsn DSN as PEAR dsn URI or dsn Array
      * @param array $params Database column fields which should be returned
      */
-    function DB_NestedSet_MDB2(&$dsn, $params = array())
+    function __construct(&$dsn, $params = array())
     {
         $this->_debugMessage('DB_NestedSet_MDB2($dsn, $params = array())');
         $this->DB_NestedSet($params);
@@ -88,7 +88,7 @@ class DB_NestedSet_MDB2 extends DB_NestedSet
             return $dsn;
         }
 
-        $db =& MDB2::connect($dsn);
+        $db = MDB2::connect($dsn);
         $this->_testFatalAbort($db, __FILE__, __LINE__);
 
         return $db;

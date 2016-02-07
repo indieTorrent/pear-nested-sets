@@ -97,7 +97,7 @@ class DB_NestedSet_Output {
     * @access public
     * @return object The DB_NestedSet_Ouput object
     */
-    function &factory ($params, $driver = 'TreeMenu') {
+    static function &factory ($params, $driver = 'TreeMenu') {
 
         $path = dirname(__FILE__).'/'.$driver.'.php';
         if(is_dir($path) || !file_exists($path)) {
