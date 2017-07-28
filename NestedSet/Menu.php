@@ -60,7 +60,7 @@ class DB_NestedSet_Menu extends DB_NestedSet_Output {
      * @return void
      */
     function DB_NestedSet_Menu($params) {
-        $this->_structMenu = & $this->_createFromStructure($params);
+        $this->_structMenu = $this->_createFromStructure($params);
     }
     // }}}
     // {{{ _createFromStructure
