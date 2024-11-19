@@ -1,0 +1,11 @@
+{
+    "name": "indietorrent/pear-nested-sets",
+    "description": "A standalone version of the PEAR DB_NestedSet library.",
+    "type": "library",
+    "autoload": {
+        "classmap": [
+            ""
+        ]
+    },
+    "require": {}
+}
